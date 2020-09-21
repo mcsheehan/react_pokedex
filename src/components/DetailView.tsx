@@ -1,6 +1,5 @@
 import React from 'react';
 import './DetailView.css';
-import Pokemon from "./Pokemon";
 
 
 const DetailView = (pokemon : any) => {

@@ -2,9 +2,9 @@
     width: 50%;
     height: 100%;
     padding: 60px;
-    background-color: #df095e;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: #DE3E4B;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -12,7 +12,7 @@ const PokeList = (handleOnClick: any) : JSX.Element=> {
     })
 
     return (
-        <section className="poke-list">
+        <section className="poke-list scroll-colours">
             {cells}
          </section>
      )

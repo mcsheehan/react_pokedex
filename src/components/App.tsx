@@ -17,7 +17,7 @@ class App extends Component<any, Pokemon> {
     }
 
     handleOnClick(id: number) {
-        fetch(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+        fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
             .then(res => res.json())
             .then(data => {
                     const pokemon = new Pokemon(data);
@@ -34,7 +34,6 @@ class App extends Component<any, Pokemon> {
             <div className="App">
                 <PokeList handleOnClick={this.handleOnClick}/>
                 <DetailView pokemon={this.state}/>
-
             </div>
             ;
         </div>
