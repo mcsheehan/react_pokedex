@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@4.0.0
+  aws-s3: circleci/aws-s3@1.1.0
 
 jobs:
   build-react-application:
@@ -16,9 +17,13 @@ jobs:
           name: Build react application
           command: |
             npm run-script build
+      - aws-s3/sync:
+          from: '~/repo/build'
+          to: 's3://marksheehan.net/pokemon'
 
 workflows:
   version: 2
   build-and-test-react-application:
     jobs:
-      - build-react-application
+      - build-react-application:
+          context: aws-deployment
