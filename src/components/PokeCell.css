@@ -10,7 +10,7 @@
 }
 
 .poke-cell:hover{
-    animation: bounce 0.5s linear;
+    animation: bounce 0.7s linear;
 }
 
 @keyframes bounce {

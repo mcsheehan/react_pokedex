@@ -14,6 +14,7 @@ class App extends Component<any, Pokemon> {
         }
 
         this.handleOnClick = this.handleOnClick.bind(this)
+        this.handleOnClick(7)
     }
 
     handleOnClick(id: number) {
